@@ -134,6 +134,7 @@ function previous_song()
 {
     if(index_no > 0)
     {
+        index_no--;
         load_track(index_no);
         playsong();
     }
