@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="main">
+        <p id="logo"><i class='bx bx-music'></i>Music</p>
+
+        <div class="left">
+            <img src="images/4.jpg" class="track_img">
+            <div class="volume">
+                <p class="volume_show">90</p>
+
+                <i class='bx bxs-volume-low' id="volume_icon" onclick="mute_sound()"></i>
+                <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="show_song_no">
+                <p class="present">1</p>
+                <p class="total">5</p>
+            </div>
+
+            <p class="title">title.mp3</p>
+            <p class="artist">Artist name</p>
+
+            <div class="middle">
+                <button onclick="previous_song()" id="pre"><i class='bx bxs-skip-previous-circle'></i></button> 
+
+                <button onclick="justplay()" id="play"><i class='bx bx-play-circle'></i></button>
+
+                <button onclick="next_song()" id="next"><i class='bx bxs-skip-next-circle'></i></button>
+            </div>
+
+            <div class="duration">
+                <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
