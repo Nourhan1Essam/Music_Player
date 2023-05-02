@@ -26,32 +26,32 @@ let all_song =
 [
     {
         name: "first song",
-        path: "songs/1.mp3",
-        img: "images/1.jpg",
+        path: "./1.mp3",
+        img: "./1.jpg",
         singer: "first singer",
     },
     {
         name: "second song",
-        path: "songs/2.mp3",
-        img: "images/2.jpg",
+        path: "./2.mp3",
+        img: "./2.jpg",
         singer: "second singer",
     },
     {
         name: "third song",
-        path: "songs/3.mp3",
-        img: "images/3.jpg",
+        path: "./3.mp3",
+        img: "./3.jpg",
         singer: "third singer",
     },
     {
         name: "fourth song",
-        path: "songs/4.mp3",
-        img: "images/4.jpg",
+        path: "./4.mp3",
+        img: "./4.jpg",
         singer: "fourth singer"
     },
     {
         name: "fifth song",
-        path: "songs/5.mp3",
-        img: "images/5.jpg",
+        path: "./5.mp3",
+        img: "./5.jpg",
         singer: "fifth singer",
     }
 ];
