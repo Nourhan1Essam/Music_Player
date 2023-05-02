@@ -63,9 +63,9 @@ function load_track(index_no)
 {
     clearInterval(timer);
     reset_slider()
+    track_image.src = all_song[index_no].img;
     track.src = all_song[index_no].path;
     title.innerHTML = all_song[index_no].name;
-    track_image.src = all_song[index_no].img;
     artist.innerHTML = all_song[index_no].singer;
     track.load();
 
